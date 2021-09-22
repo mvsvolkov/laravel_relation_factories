@@ -24,7 +24,7 @@ class ArticleFactory extends Factory
     {
         return [
             'title' => $this->faker->sentence,
-            'author_id' => User::inRandomOrder()->first()->id,
+            'author_id' => User::factory(),
         ];
     }
 }
